@@ -1,0 +1,14 @@
+*JWT Structure
+Header
+{
+    "alg" : "HS512",
+    "typ" : "JWT"
+}
+Payload
+{
+    "nameid":"8",
+     "unique_name":"frank",
+      "nbf":,  //not before
+       "exp":, //expired
+        "iat": //issued at
+}
