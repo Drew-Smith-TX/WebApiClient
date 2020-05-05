@@ -10,7 +10,7 @@ namespace DatingApp.API.Data
         private readonly DataContext _context;
         public DatingRepository(DataContext context)
         {
-            this._context = context;
+            _context = context;
         }
         public void Add<T>(T entity) where T : class
         {
@@ -36,10 +36,7 @@ namespace DatingApp.API.Data
             return users;
         }
 
-        public Task<IEnumerable<User>> GetUsers(int id)
-        {
-            throw new System.NotImplementedException();
-        }
+       
 
         public async Task<bool> SaveAll()
         {
