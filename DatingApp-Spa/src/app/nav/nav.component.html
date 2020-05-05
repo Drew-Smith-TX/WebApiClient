@@ -1,25 +1,25 @@
 <nav class="navbar navbar-expand-md navbar-dark  bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="#">Super Dating</a>
+  <div class="container" >
+    <a class="navbar-brand" [routerLink]="['/home']"  ><img src="../../assets/hiclipart.com.png" alt="Marvel" style="width: 50px;height: 75px;"></a>
   
 
  
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Matches</a>
+      <li class="nav-item" 
+        routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/members']"  >Matches</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item"
+        routerLinkActive="active">
         <a 
           class="nav-link" 
-          href="#">Lists
+          [routerLink]="['/lists']"  >Lists
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled"
-         href="#" 
-         tabindex="-1"
-         aria-disabled="true">
-         Messages
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link"
+          [routerLink]="['/messages']"  
+          >Messages
         </a>
       </li>   
       
